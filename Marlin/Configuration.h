@@ -1214,12 +1214,12 @@
  */
 #define NOZZLE_TO_PROBE_OFFSET \
   {                            \
-    -42, -5, 0                 \
+    -45.6, -5.5, -0.94         \
   }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 15
+#define PROBING_MARGIN 10
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_FEEDRATE (133 * 60)
@@ -1405,8 +1405,8 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 220
-#define Y_BED_SIZE 220
+#define X_BED_SIZE 230
+#define Y_BED_SIZE 230
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1904,7 +1904,7 @@
 #define PREHEAT_1_FAN_SPEED 255 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL "PLA"
-#define PREHEAT_2_TEMP_HOTEND 190
+#define PREHEAT_2_TEMP_HOTEND 202
 #define PREHEAT_2_TEMP_BED 55
 #define PREHEAT_2_FAN_SPEED 255 // Value from 0 to 255
 
@@ -1914,8 +1914,8 @@
 #define PREHEAT_3_FAN_SPEED 255 // Value from 0 to 255
 
 #define PREHEAT_4_LABEL "PETG"
-#define PREHEAT_4_TEMP_HOTEND 240
-#define PREHEAT_4_TEMP_BED 70
+#define PREHEAT_4_TEMP_HOTEND 242
+#define PREHEAT_4_TEMP_BED 85
 #define PREHEAT_4_FAN_SPEED 255 // Value from 0 to 255
 
 /**
